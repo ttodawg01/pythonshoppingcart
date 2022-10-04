@@ -23,9 +23,10 @@ def shopping_cart():
             
         elif carts == "clear":
             you_sure = input("are you sure? Once you clear you cannot undo, Y/N ")
-            if "Y":
+            if you_sure == "Y":
+                full_cart.clear()
                 print("Your cart has been cleared")
-            elif "N":
+            else:
                 continue
         elif carts == "quit":
             print("Thank you for shopping with us")
