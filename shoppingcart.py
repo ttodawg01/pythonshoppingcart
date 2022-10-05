@@ -50,7 +50,12 @@ def shopping_cart():
                 full_cart[x]["quantity"]
                 total_quantity += full_cart[x]["quantity"]
             print(f"this is the amount you ordered {total_quantity}")
-                
+
+            # for i in full_cart:
+            full_cart[x]["total"]
+            total_cost += full_cart[x]["total"]
+
+            print(f"This is the total ammount {total_cost}")    
             break
 
         elif carts == "show":
